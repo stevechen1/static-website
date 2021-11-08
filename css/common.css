@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: rgb(226, 221, 221);
+}
+li {
+    list-style: none;
+    cursor: pointer;
+}
+header {
+    background: url(../source/top_roles2.png) rgb(43, 37, 37) bottom center/80% no-repeat ;
+    height: 100vh;
+    position: relative;
+}
+header nav>ul {
+    position: absolute;
+    top: 1vh;
+    right:3vw;
+    text-align: center;
+}
+header nav>ul>li  {
+    width: 10vw;
+    float: left;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+header nav li:link {
+    background: yellow;
+}
+header nav li:visited {
+    background: red;
+}
+
+header nav li:hover {
+    background: rgb(46, 85, 42);
+    transition: all .5s linear ;
+}
+header nav li:active {
+    background: pink;
+}                               /*伪类 link>visited>hover>active*/
+.clearfix {
+    content: '';
+    clear: both ;
+    display: block;
+}
+header nav .about_list {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-top: 30px;
+    
+}
+header nav .about_list li {
+    padding: 20px ;
+    width: 10vw;
+    border-radius: 10px;
+}
+header nav li:hover .about_list {
+    display: block;
+}
+header h2 {
+    color: rgb(247, 241, 241);
+    position: absolute;
+    bottom: 40vh;
+    right: 50%;
+    font-size: 40px;
+    transform: translate(50%,50%);
+}
+header h1 {
+    color: #eee;
+    position: absolute;
+    bottom: 30vh;
+    right: 50%;
+    font-size: 80px;
+    transform: translate(50%,50%);
+}
+header .join_button {
+    padding: 30px;
+    background: yellow;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15vh;
+    right: 50%;
+    font-size: 30px;
+    transform: translate(50%,50%);
+    box-shadow: 1px 2px 3px 10px rgba(10, 10, 10, .5);
+}
+header .join_button:hover {
+    opacity: .8;
+    background: green;
+    transition: 1s linear;
+}
+main {
+    background: rgb(43, 37, 37) ;
+    text-align: center;
+    color: #eee;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid pink;
+    overflow:  hidden;
+}
+main h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+
+}
+main h3 {
+    text-align: center;
+}
+main .game_intro {
+    display: flex;
+}
+main .game_intro .card {
+    flex: 25%;
+    padding: 30px;
+    border-bottom: 1px solid pink;
+}
+main .game_intro .card img {
+    width: 100%;
+    box-shadow: 1px 2px 3px 4px #000;
+    opacity: .9;
+}
+main .game_intro .card img:hover {
+    opacity: .3;
+    transition: .5s ease;
+}
+main .card h4 {
+    padding: 20px;
+}
+main .card p {
+    padding: 5px;
+}
+main .update_intro {
+    background: rgb(43, 37, 37)0;
+    position: relative;
+}
+main .update_intro h3 {
+    padding: 50px;
+    margin-top: 100px;
+    font-size: 50px;
+}
+main .update_intro .time_list {
+
+}
+main .time_list li {
+    position: relative;
+    height: 20vh;
+}
+main .update_intro .time_list li img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(173,216,312,.8) ;
+
+}
+main .time_list img:hover {
+    opacity: .4;
+    transition: .2s linear;
+}
+main .time_list li:nth-child(even) img {
+    float: left;
+}
+main .time_list li:nth-child(odd) img {
+    float: right;
+}
+main .time_list li:nth-child(even) {
+    padding-left: calc(50% - 75px);
+    margin-top: 80px;
+}
+main .time_list li:nth-child(odd) {
+    padding-right: calc(50% - 75px);
+    margin-top: 80px;
+}
+main .time_list li::after {
+    content: '';
+    display: inline-block;
+    border: 1px solid lightblue;
+    height: 10vh;
+    position: absolute;
+    right: 50%;
+    margin-top: 1vh;
+
+}
+main .time_list li:last-child::after {
+    display: none;
+}
+main .time_list li .content h4 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+main .content {
+    height: 100%;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-indent: 40px;
+}
+main .time_list li:nth-child(odd) .content {
+    margin-right: 200px;
+}
+main .time_list li:nth-child(even) .content {
+    margin-left: 200px;
+}
+
+footer {
+    text-align: center;
+    background: rgb(43, 37, 37) ;
+    color: seashell;
+
+}
+footer .contact h5 {
+    font-size: 70px;
+    padding-top: 50px;
+}
+footer .contact p {
+    padding: 50px;
+}
+footer .contact .layout{
+    display: flex;
+    align-items: center;
+
+}
+footer .contact .side1{
+    flex: 50%;
+    padding-left: 10vw;
+}
+footer .contact .side1 input {
+    width: 60%;
+    display: block;
+    margin: 40px;
+    height: 6vh;
+    border-radius: 10px;
+}
+footer .contact .side2 {
+    flex: 50%;
+}
+footer .contact #side2 {
+    border-radius: 10px;
+    width: 50%;
+
+}
+footer .contact .submit {
+    padding: 20px 30px ;
+    margin-top: 5vh;
+    border-radius: 10px;
+    background: yellow;
+    text-shadow: lightcoral;
+    font-size: 40px;
+}
+footer .foot {
+    background: #000;
+    height: 5vh;
+
+}
+footer .foot a {
+    font-size: 30px;
+    color: #eee;
+    padding-right: 40px;
+    margin-right: 20px;
+}

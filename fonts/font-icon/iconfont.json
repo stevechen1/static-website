@@ -1,0 +1,37 @@
+{
+  "id": "2923380",
+  "name": "web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4936985",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e882",
+      "unicode_decimal": 59522
+    },
+    {
+      "icon_id": "4936987",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e883",
+      "unicode_decimal": 59523
+    },
+    {
+      "icon_id": "6151265",
+      "name": "mail",
+      "font_class": "mail",
+      "unicode": "e812",
+      "unicode_decimal": 59410
+    }
+  ]
+}
